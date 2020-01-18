@@ -1,4 +1,4 @@
-package guru.springframework.msscbrewery.model;
+package guru.springframework.msscbrewery.serialization;
 
 import java.io.IOException;
 import java.time.OffsetDateTime;

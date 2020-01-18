@@ -43,7 +43,52 @@ public class BeerLoader implements CommandLineRunner {
 					.price(new BigDecimal(6.75))
 					.build());
 
-			log.debug("Loaded {} Beers into Database", 2);
+			beerRepository.save(Beer.builder()
+					.beerName("Jacaré do Lago")
+					.beerStyle(BeerStyleEnum.PIELSEN)
+					.quantityToBrew(50)
+					.minOnHand(6)
+					.upc(30303L)
+					.price(new BigDecimal(40.00))
+					.build());
+
+			beerRepository.save(Beer.builder()
+					.beerName("Caxiri")
+					.beerStyle(BeerStyleEnum.PURO_MALTE)
+					.quantityToBrew(10)
+					.minOnHand(1)
+					.upc(40404L)
+					.price(new BigDecimal(10.00))
+					.build());
+
+			beerRepository.save(Beer.builder()
+					.beerName("Caxiri de batata roxa")
+					.beerStyle(BeerStyleEnum.PURO_MALTE)
+					.quantityToBrew(10)
+					.minOnHand(1)
+					.upc(50505L)
+					.price(new BigDecimal(12.00))
+					.build());
+
+			beerRepository.save(Beer.builder()
+					.beerName("Caxiri do Uiramutâ")
+					.beerStyle(BeerStyleEnum.PURO_MALTE)
+					.quantityToBrew(10)
+					.minOnHand(1)
+					.upc(60606L)
+					.price(new BigDecimal(15.00))
+					.build());
+
+			beerRepository.save(Beer.builder()
+					.beerName("Cariri Waimiri Atroari")
+					.beerStyle(BeerStyleEnum.PURO_MALTE)
+					.quantityToBrew(10)
+					.minOnHand(1)
+					.upc(70707L)
+					.price(new BigDecimal(14.00))
+					.build());
+
+			log.debug("Loaded {} Beers into Database", 7);
 		}
 	}
 

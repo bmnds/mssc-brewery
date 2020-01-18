@@ -20,6 +20,10 @@ import org.hibernate.annotations.UpdateTimestamp;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
+import guru.springframework.msscbrewery.serialization.LocalDateTimeDeserializer;
+import guru.springframework.msscbrewery.serialization.LocalDateTimeSerializer;
+import guru.springframework.msscbrewery.serialization.OffsetDateTimeDeserializer;
+import guru.springframework.msscbrewery.serialization.OffsetDateTimeSerializer;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
