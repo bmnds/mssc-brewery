@@ -145,7 +145,7 @@ public class BeerServiceTests {
 				.quantityToBrew(200)
 				.minOnHand(10)
 				.price(new BigDecimal("7.5"))
-				.upc(13L)
+				.upc("000000000001")
 				.build();
 	}
 
@@ -156,7 +156,7 @@ public class BeerServiceTests {
 				.quantityToBrew(200)
 				.minOnHand(10)
 				.price(new BigDecimal("7.5"))
-				.upc(13L)
+				.upc("000000000001")
 				.build();
 	}
 

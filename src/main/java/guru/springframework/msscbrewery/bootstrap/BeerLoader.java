@@ -30,7 +30,7 @@ public class BeerLoader implements CommandLineRunner {
 					.beerStyle(BeerStyleEnum.PIELSEN)
 					.quantityToBrew(200)
 					.minOnHand(12)
-					.upc(10101L)
+					.upc("000000000001")
 					.price(new BigDecimal(12.95))
 					.build());
 
@@ -39,7 +39,7 @@ public class BeerLoader implements CommandLineRunner {
 					.beerStyle(BeerStyleEnum.PURO_MALTE)
 					.quantityToBrew(100)
 					.minOnHand(6)
-					.upc(20202L)
+					.upc("000000000002")
 					.price(new BigDecimal(6.75))
 					.build());
 
@@ -48,7 +48,7 @@ public class BeerLoader implements CommandLineRunner {
 					.beerStyle(BeerStyleEnum.PIELSEN)
 					.quantityToBrew(50)
 					.minOnHand(6)
-					.upc(30303L)
+					.upc("000000000003")
 					.price(new BigDecimal(40.00))
 					.build());
 
@@ -57,7 +57,7 @@ public class BeerLoader implements CommandLineRunner {
 					.beerStyle(BeerStyleEnum.PURO_MALTE)
 					.quantityToBrew(10)
 					.minOnHand(1)
-					.upc(40404L)
+					.upc("000000000004")
 					.price(new BigDecimal(10.00))
 					.build());
 
@@ -66,7 +66,7 @@ public class BeerLoader implements CommandLineRunner {
 					.beerStyle(BeerStyleEnum.PURO_MALTE)
 					.quantityToBrew(10)
 					.minOnHand(1)
-					.upc(50505L)
+					.upc("000000000005")
 					.price(new BigDecimal(12.00))
 					.build());
 
@@ -75,7 +75,7 @@ public class BeerLoader implements CommandLineRunner {
 					.beerStyle(BeerStyleEnum.PURO_MALTE)
 					.quantityToBrew(10)
 					.minOnHand(1)
-					.upc(60606L)
+					.upc("000000000006")
 					.price(new BigDecimal(15.00))
 					.build());
 
@@ -84,7 +84,7 @@ public class BeerLoader implements CommandLineRunner {
 					.beerStyle(BeerStyleEnum.PURO_MALTE)
 					.quantityToBrew(10)
 					.minOnHand(1)
-					.upc(70707L)
+					.upc("000000000007")
 					.price(new BigDecimal(14.00))
 					.build());
 

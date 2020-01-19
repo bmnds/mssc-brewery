@@ -5,7 +5,10 @@ import java.util.UUID;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
+import javax.validation.constraints.PositiveOrZero;
+import javax.validation.constraints.Size;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -26,13 +29,16 @@ public class BeerDto {
 	private String beerName;
 	@NotBlank
 	private String beerStyle;
-	@Positive
-	private Long upc;
+	@Size(min = 12, max = 12)
+	@Pattern(regexp = "\\d*")
+	private String upc;
 	@Positive
 	private BigDecimal price;
 	@NotNull
+	@PositiveOrZero
 	private Integer minOnHand;
 	@NotNull
+	@PositiveOrZero
 	private Integer quantityToBrew;
 
 }

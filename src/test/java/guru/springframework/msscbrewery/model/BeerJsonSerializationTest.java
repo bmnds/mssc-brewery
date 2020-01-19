@@ -28,7 +28,7 @@ public class BeerJsonSerializationTest {
 				.price(new BigDecimal("10.5"))
 				.quantityToBrew(10)
 				.minOnHand(1)
-				.upc(5L)
+				.upc("000000000005")
 				.lastModifiedDate(LocalDateTime.now())
 				.createdDate(LocalDateTime.of(1989, 04, 22, 22, 00))
 				.brewDateTime(OffsetDateTime.now())

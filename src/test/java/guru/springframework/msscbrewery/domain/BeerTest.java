@@ -35,7 +35,7 @@ class BeerTest {
 	}
 
 	private Beer getValidBeer() {
-		return Beer.builder().id(UUID.randomUUID()).upc(10L)
+		return Beer.builder().id(UUID.randomUUID()).upc("000000000010")
 				.beerStyle(BeerStyleEnum.PIELSEN).build();
 	}
 

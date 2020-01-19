@@ -59,7 +59,7 @@ public class BeerServiceImplV3 implements BeerServiceV3 {
 	@Override
 	public BeerPagedList list(String beerName, BeerStyleEnum beerStyle,
 			PageRequest pageRequest) {
-		Page<Beer> page = repository.findAll(pageRequest);
+		Page<Beer> page = repository.findAll(beerName, beerStyle, pageRequest);
 
 		BeerPagedList pagedList = new BeerPagedList(
 				page.getContent().stream().map(BeerMapper.INSTANCE::toDto)

@@ -12,6 +12,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Version;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
@@ -65,7 +66,13 @@ public class Beer {
 	@Enumerated(EnumType.STRING)
 	private BeerStyleEnum beerStyle;
 
-	private Long upc;
+	/**
+	 * UPC composition:
+	 * https://en.wikipedia.org/wiki/Universal_Product_Code#Composition
+	 */
+	@Column(length = 12)
+	@Pattern(regexp = "\\d*")
+	private String upc;
 	private BigDecimal price;
 
 	private Integer minOnHand;
